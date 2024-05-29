@@ -26,3 +26,38 @@ print("".join(nuevo_texto))  # .Join sirve para unir los textos,lo que se encuen
 texto_largo="este es un texto largo"
 nuevo_texto=texto_largo.split(" ")
 print("".join(nuevo_texto))
+
+# Dato primitivo:
+nombre="Abel"
+otro_nombre=nombre
+print(id(nombre))
+print(id(otro_nombre))
+
+# Datos estructurados:
+lista_original=[1,2,3,4]
+copia_lista=lista_original
+lista_original[-1]=15
+print(copia_lista)
+
+# Crear un programa que reciba una lista desordenada y muestre por terminal una lista ordenada y la lista original.
+lista_desordenada=[3,5,34,6]
+lista_ordenada=lista_desordenada.copy()
+lista_desordenada.sort()
+print(lista_desordenada)
+print(lista_ordenada)
+
+
+
+alumnos=[
+    {
+        "nombre":"Abel",
+        "Edad":17
+    },{
+        "nombre":"Anthony",
+        "Edad":25
+    }
+]
+alumnos[0]["Edad"]=23           # Modificar un dato
+alumnos[0]={"nombre":"Mafer","edad":15}
+alumnos[1]["sexo"]="por definir"
+print(alumnos)

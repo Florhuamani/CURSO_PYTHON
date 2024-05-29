@@ -64,12 +64,45 @@ lista_nombres.pop(0)
 
 ### 4. Buscar un elemento en la lista.
 # Método index:
-```puthon
-ista_nombres=["Edith","Ruth","Luz"]
+```python
+lista_nombres=["Edith","Ruth","Luz"]
 indice=lista_nombres.index("Ruth")
 print(lista_nombres[indice])
 
 # Método pertenencia:
 ista_nombres=["Edith","Ruth","Luz"]
 pertenencias="Edith" in lista_nombres
-``E
+
+### 5. Comparación de listas: Podemos hacer uso de los operadores de comparación para comparar listas.
+**Ejem:*
+```python
+Comparar==[1,2,3]>[1,2,4]    # Se compara un elemento de la lista 1 con los elementos de la lista 2.
+# El 1 no lo evalúa por que son iguales en ammbas listas.
+# El dos no lo evalúa por que los elementos son iguales en ambas listas.
+# El 3 si evalúa por que es menor que 4.
+# Entonces la primera lista es menor que la segunda lista.
+print(compara)
+# Salida
+
+### 6. Cuidado con las copias:
+# Fe de erratas(actualizar lista):
+```python
+lista=[2,3,46,7]
+lista[3]=4
+print(lista)
+```
+```python
+alumnos=[
+    {
+        "nombre":"Abel"
+        "Edad":"17"
+    },{
+        "nombre":"Anthony"
+        "Edad":25
+    }
+]
+alumnos[0]["Edad"]=23           # Modificar un dato
+alumnos[0]={"nombre":"Mafer","edad":15}
+alumnos[1]["sexo"]="por definir"
+print(alumnos)
+```
