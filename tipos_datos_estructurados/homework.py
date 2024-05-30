@@ -74,5 +74,9 @@ Mascotas=[
 ]
 # Mostrar la lista con los 4 diccionarios.
 print(Mascotas)
-# Editar el tercer registro y cambiarle la eda sin modificar la lista original.
+# Editar el tercer registro y cambiarle la edad sin modificar la lista original.
+## Crear una copia para que la lista no se vea afectada directamente.
 Mascotas_modificadas=Mascotas.copy()
+# Editar la edad del 3 registro:
+
+
