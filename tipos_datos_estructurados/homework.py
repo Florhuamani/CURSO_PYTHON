@@ -36,19 +36,43 @@ print(lista_alumnos)
 
 # Mostrar el alumno en la posición 4 de la lista
 indice=lista_alumnos.index({
-    "nombre":"Pablo",
-    "apellido":"Córdova",
-    "edad":21
+    "nombre":"Lucy",
+    "apellido":"Rivera",
+    "edad":18
 })
 print(lista_alumnos[indice])
 
-# Crear una lista con 3 diccionarios, donde tendrán los datos de sus mascotas(nombre, edad, sexo y raza)
+# Crear una lista con 4 diccionarios, donde tendrán los datos de sus mascotas(nombre, edad, sexo y raza)
 # Mostrar la lista con los 4 diccionarios.
-# Editar el tercer registro y cambiarle la eda sin modificar la lista original y luego el 3 registro modificado.
+# Editar el tercer registro y cambiarle la eda sin modificar la lista original.
+# Mostrar la lista original y luego el 3 registro modificado.
+
+# SOLUCIÓN:
+# Crear una lista con 4 diccionarios, donde tendrán los datos de sus mascotas(nombre, edad, sexo y raza)
 Mascotas=[
     {
         "Nombre":"Luna",
         "Edad":2 ,
-        "Sexo":"Hembra"
+        "Sexo":"Hembra",
         "Raza":"Chihuahua"
-    }]
+    },{
+        "Nombre":"Max",
+        "Edad":3,
+        "Sexo":"Macho",
+        "Raza":"Labrador"
+    },{
+        "Nombre":"Bella",
+        "Edad":5,
+        "Sexo":"Hembra",
+        "Raza":"Buldog"
+    },{
+        "Nombre":"Rocky",
+        "Edad":1,
+        "Sexo":"Macho",
+        "Raza":"Pitbull"
+    }
+]
+# Mostrar la lista con los 4 diccionarios.
+print(Mascotas)
+# Editar el tercer registro y cambiarle la eda sin modificar la lista original.
+Mascotas_modificadas=Mascotas.copy()
