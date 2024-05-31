@@ -78,5 +78,13 @@ print(Mascotas)
 ## Crear una copia para que la lista no se vea afectada directamente.
 Mascotas_modificadas=Mascotas.copy()
 # Editar la edad del 3 registro:
+Mascotas_modificadas[2]["Edad"]=3
+# Mostrar la lista original:
+print("Lista original:")
+print(Mascotas)
+# Mostrar el 3 registro modificado
+print("Tercer registro modificado:")
+print(Mascotas_modificadas[2])
+
 
 
