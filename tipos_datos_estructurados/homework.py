@@ -86,5 +86,41 @@ print(Mascotas)
 print("Tercer registro modificado:")
 print(Mascotas_modificadas[2])
 
+# Un empresario de alquiler de autos desea guardar en una base de datos la información de sus vehículos, proceso que desea automatizar con un sistema informático,las acciones
+# que puedo realizar el empresario son :
+# Ver la lista de autos que tiene.
+# Podrá también actualizar la lista y agregar un nuevo vehículo.
+# Usando casos de uso.
+
+## CASOS DE USO:
+# Yo como empresario 
+# Quiero guardar la información en una base de datos.
+# Para ver la lista de autos que tengo
+
+lista_autos=[
+    {
+        "Marca":"Honda",
+        "Precio":456.00,
+        "Color":"Negro"
+    },{
+        "Marca":"Susuki",
+        "Precio":520.00,
+        "Color":"Blanco"
+    },{
+        "Marca":"Toyota",
+        "Precio":1000.00,
+        "Color":"Rojo"
+    }
+]
+
+print(lista_autos)
+
+# Yo como empresario
+# Quiero agregar un nuevo vehiclo 
+# Para ver la lista actualizada.
+def agregar_nuevo_vehiculo(autos, marca, modelo, año, disponible):
+    nuevo_auto = {'marca': "Mercedes_benz","precio":1500.00,"Color":"Griss"}
+    autos.append(nuevo_auto)
+
 
 
