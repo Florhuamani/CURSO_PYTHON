@@ -26,6 +26,7 @@ print("y".join(["a","b","c"]))    # a y b y c
 ```python
 str=str(input("variable:"))
 # Almacena la información de una variable(INPUT)
+
 ```python
 for i in range(5):
     print(i)
