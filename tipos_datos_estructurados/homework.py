@@ -123,4 +123,7 @@ def agregar_nuevo_vehiculo(autos, marca, modelo, año, disponible):
     autos.append(nuevo_auto)
 
 
-
+# Crear una lista de los primeros 20 números primos haciendo uso de comprensión.
+números_primos = [num for num in range(2, 100) if all(num % i != 0 for i in range(2, int(num ** 0.5) + 1) if num != i)]
+primos = [num for num in números_primos][:20]
+print(primos)

@@ -61,3 +61,28 @@ alumnos[0]["Edad"]=23           # Modificar un dato
 alumnos[0]={"nombre":"Mafer","edad":15}
 alumnos[1]["sexo"]="por definir"
 print(alumnos)
+
+# 7. Crear una lista de números enteros del siguiente texto:
+texto="1,4,8,9,6"
+nueva_lista=[]
+for n in texto.split(","):
+    nueva_lista.append(int(n))
+print(nueva_lista)
+
+# Aplicando la técnica vlc valor bucle y condición.
+texto="1,4,8,9,6"
+nueva_lista=[int(n)for n in texto.split(",") if int (n)%2==0 ]            
+print(nueva_lista)
+
+# Diccionarios por comprensión:
+lista_amigos=["Abel","Anthony","Edith","Ruth"]
+diccionario={}
+for _,v in enumerate(lista_amigos):
+    diccionario[v]=len(v)
+print(diccionario)
+
+# Aplicando vlc:
+lista_amigos=["Abel","Anthony","Edith","Ruth"]
+diccionario={amigo:len(amigo) for amigo in lista_amigos}
+print(diccionario)
+

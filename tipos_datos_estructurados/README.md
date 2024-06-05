@@ -105,4 +105,18 @@ alumnos[0]["Edad"]=23           # Modificar un dato
 alumnos[0]={"nombre":"Mafer","edad":15}
 alumnos[1]["sexo"]="por definir"
 print(alumnos)
+
+### 7. Listas y diccionarios por compreción: Es una técnica pythonica que nos permite crear listas y diccionarios en una sola línea combinando bucles y decisiones.
+> [!NOTE]
+> **VLC** value loop condición - valor bucle condición
+
+nueva_lista=[int(n)for n in texto.split(",") if int (n)%2==0 ]            
+print(nueva_lista)
+
+# Diccionarios por comprensión:
+lista_amigos=["Abel","Anthony","Edith","Ruth"]
+diccionario={}
+for _,v in enumerate(lista_amigos):
+    diccionario[v]=len(v)
+print(diccionario)
 ```
