@@ -212,3 +212,11 @@ Ejemplo para cada una de las funciones internas de Python :
      identificador = id(objeto)
      print(identificador)  # Output: Identificador único de 'Hola'
      
+## Tipos de funciones:
+### Funciones anónimas(FUNCIONES LAMBDA)
+Una función que no tiene nombre.
+`lambda:"Hola"`
+### Funciones closure
+### Funciones callback
+
+## Programación funcional
