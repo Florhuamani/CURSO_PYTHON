@@ -212,5 +212,3 @@ Ejemplo para cada una de las funciones internas de Python :
      identificador = id(objeto)
      print(identificador)  # Output: Identificador único de 'Hola'
      
-
-Estos ejercicios ilustran cómo utilizar cada una de las funciones internas de Python en diferentes contextos.
