@@ -215,8 +215,33 @@ Ejemplo para cada una de las funciones internas de Python :
 ## Tipos de funciones:
 ### Funciones anónimas(FUNCIONES LAMBDA)
 Una función que no tiene nombre.
+```python
 `lambda:"Hola"`
+#normal
+def saludo():
+    return "hola"
+```
 ### Funciones closure
-### Funciones callback
+una función que dentro tiene otra función.
+```python
+def saludo(nombre):
+    print
+```
 
+### Funciones callback
+`int(input("ingrese su nombre"))`
 ## Programación funcional
+Es la programación en la cual  necesitas saber como funciona.
+```python
+lista=[2,4,46,6,7,6]
+def numero_minimo(1):
+    minimo=l[0]
+    for n in l:
+        if n < minimo:
+            minimo=n
+    return minimo
+
+# Programación funcional
+min(lista)
+```
+#### Averiguar sobre map(), filter(), reduce(). (son funciones callback)
