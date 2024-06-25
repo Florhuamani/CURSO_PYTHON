@@ -245,3 +245,101 @@ def numero_minimo(1):
 min(lista)
 ```
 #### Averiguar sobre map(), filter(), reduce(). (son funciones callback)
+
+# FUNCIÓN MAP:
+Esta función aplica otra función sobre cada elemento de un iterable. Se utiliza para una función especificada a cada elemento en un iterable(como una lista,una tupla,etc). Retorna un objeto de tipo map,que es un iterador que contiene los resultados despues de aplicar la función dada a cada elemento del iterable.
+> Sintaxis:
+La sintaxis de la función map() es:
+python
+`map(función, iterable)`
+
+Donde:
+- función: La función que se aplicará a cada elemento del iterable.
+- iterable: El iterable (por ejemplo, una lista, tupla, etc.) cuyos elementos se pasarán a la función.
+
+> Ejemplo
+Aquí tienes un ejemplo de cómo se puede usar la función map():
+python
+*Definir una función*
+```python
+def cuadrado(x):
+    return x __ 2
+```
+
+*Crear una lista*
+```numeros = [1, 2, 3, 4, 5]```
+
+*Aplicar la función a cada elemento de la lista usando map*
+```numeros_al_cuadrado = map(cuadrado, numeros)```
+
+*Convertir el objeto map a una lista*
+```python
+numeros_al_cuadrado_lista = list(numeros_al_cuadrado)
+
+print(numeros_al_cuadrado_lista)  # Salida: [1, 4, 9, 16, 25]
+
+```
+# FUNCIÓN FILTER
+
+La función filter() integrada de Python se utiliza para crear un nuevo iterador a partir de un iterable existente, como una lista o una tupla. Esta función filtra los elementos del iterable utilizando una función para probar si el elemento es aceptado o no.
+
+La sintaxis de la función filter() es:
+python
+filter(función, iterable)
+
+Donde:
+- función: La función que se utiliza para decidir si se incluye o se filtra cada elemento.
+- iterable: El iterable (por ejemplo, una lista, tupla, etc.) cuyos elementos se filtrarán.
+
+Por ejemplo, si queremos filtrar los números pares de una lista, podemos usar la función filter() junto con una función que compruebe si un número es par.
+
+python
+*Definir una función para comprobar si un número es par*
+```python
+def es_par(numero):
+    return numero % 2 == 0
+```
+
+*Crear una lista de números*
+`numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`
+
+*Aplicar la función filter para filtrar los números pares*
+`numeros_pares = filter(es_par, numeros)`
+
+*Convertir el iterador a una lista*
+```python
+numeros_pares_lista = list(numeros_pares)
+
+print(numeros_pares_lista)  # Salida: [2, 4, 6, 8, 10]
+```
+
+>[!NOTE]
+Por cuestiones de legibilidad del código, se suelen preferir las listas por comprensión a funciones como map() o filter(), aunque cada problema tiene sus propias características y sus soluciones más adecuadas. Es un enfoque «más pitónico».
+
+
+# FUNCIÓN REDUCE
+Para poder usar esta función debemos usar el módulo functools. Nos permite aplicar una función dada sobre todos los elementos de un iterable de manera acumulativa. O dicho en otras palabras, nos permite reducir una función sobre un conjunto de valores. Supongamos que queremos realizar el producto de una serie de valores aplicando este enfoque:
+```python
+from functools import reduce
+
+def mult_values(a, b):
+    return a * b
+
+
+data = range(1, 6)
+
+reduce(mult_values, data)  # ((((1 * 2) * 3) * 4) * 5)
+120
+```
+
+```python
+from functools import reduce
+
+*Definir una lista de números*
+numeros = [1, 2, 3, 4, 5]
+
+*Utilizar reduce para obtener la suma de los números*
+suma_total = reduce(lambda x, y: x + y, numeros)
+
+print(suma_total)  # Salida: 15
+```
