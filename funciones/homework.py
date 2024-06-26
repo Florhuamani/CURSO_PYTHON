@@ -43,3 +43,52 @@ print(Sum(*valores))
 # Crear una lista con los siguientes campos, nombre, apellido, edad, celular, email.
 #1. Actualizar los registros con un campo mas todos tendrán el campo de programa de estudios de enfermería.
 #2. Buscar el segundo registro y actualizar su edad a 50 años.
+
+lista_alumnos=[
+    {
+        "nombre":"Abel",
+        "apellido":"Jurado",
+        "Edad":20,
+        "Celular":956347356,
+        "email":"abel@23"
+
+    },{
+        "nombre":"Ruth",
+        "apellido":"Castillo",
+        "Edad":18,
+        "Celular":957875456,
+        "email":"ruthl@05"
+
+    },{
+        "nombre":"Rocio",
+        "apellido":"Lobo",
+        "Edad":26,
+        "Celular":956736566,
+        "email":"loborocio@13"
+
+    },{
+        "nombre":"Alvaro",
+        "apellido":"Canchos",
+        "Edad":19,
+        "Celular":9674638476,
+        "email":"canchosalvaro@31"
+
+    }
+    
+]
+
+#1. Actualizar los registros con un campo mas todos tendrán el campo de programa de estudios de enfermería.
+def objeto(e):
+        e["programa_estudio"]="enfermeria"
+        return [e]
+    
+lista_actualizados=list(map(objeto,lista_alumnos))
+print(lista_actualizados)
+
+#2. Buscar el segundo registro y actualizar su edad a 50 años.
+def objeto(e):
+        e["edad"]=50
+        return [e]
+
+lista_actualizada=list(filter(objeto,lista_alumnos))
+print(lista_actualizados[1])

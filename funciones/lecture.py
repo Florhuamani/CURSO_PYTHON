@@ -62,6 +62,11 @@
 #     return nombre
 # mensaje(pedir_nombre())
 
+# Segunda forma de solución.
+lista=[5,5,435,6,345,4]
+separar_pares, separar_impares = lambda lista: [num for num in lista if num % 2 == 0], lambda lista: [num for num in lista if num % 2 != 0]
+print(separar_pares(lista), separar_impares(lista))
+
 # MAP
 lista=[4,7,8,5,2]
 nueva_lista=list(map(lambda x:x+1,lista)) # Por defecto retorna una lista
