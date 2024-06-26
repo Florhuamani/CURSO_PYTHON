@@ -229,6 +229,7 @@ def saludo(nombre):
 ```
 
 ### Funciones callback
+Reciben por argumento.
 `int(input("ingrese su nombre"))`
 ## Programación funcional
 Es la programación en la cual  necesitas saber como funciona.
