@@ -2,7 +2,6 @@
 # un archivo tendrá una importación directa del otro archivo
 # 5 variables y una función
 #Archivo 1: archivo1.py*
-archivo1.py
 
 # Definición de variables
 variable1 = 10
@@ -25,14 +24,3 @@ print(archivo2.variable7)
 print(archivo2.multiplicacion(5, 3))
 
 
-#Archivo 2: archivo2.py
-archivo2.py
-
-# Definición de variables
-variable6 = 30
-variable7 = "Mundo"
-
-# Definición de función
-def multiplicacion(a, b):
-    """funcion de producto"""
-    return a * b
