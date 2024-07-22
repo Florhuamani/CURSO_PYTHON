@@ -75,3 +75,6 @@ Módulos relacionados en una jerarquía de directorios.
 
 ### Cómo importar:
 importar ```nombre_paquete.nombre_módulo```.
+
+
+#### Main.py se le conoce como archivo de script y el codigo que está dentro de mi archivo se le conoce como script.
