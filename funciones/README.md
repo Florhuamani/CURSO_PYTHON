@@ -344,3 +344,5 @@ suma_total = reduce(lambda x, y: x + y, numeros)
 
 print(suma_total)  # Salida: 15
 ```
+
+
