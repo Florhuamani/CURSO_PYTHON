@@ -66,7 +66,7 @@ class Agencia:
         if self.destino:
             print("Destino: ", self.destino)
 
-        if not self.origen and not self.destino:  # Verificación de origen y destino
+        if not self.origen and not self.destino:  
             print("Viaje no reservado")
 
 
