@@ -34,3 +34,9 @@ En el proceso diseño de una clase hay que tener en cuenta `el principio de resp
 > [!TIP]
 > *Un paradigma de programación en un método, técnica o estilo de programar. Muchos de los lenguajes de programación son creados en base a un paradigma, ejemplo `java` es un lenguaje que adopta el paradigma `POO`(Programación Orientada a Objeto). Sin embargo existen lenguajes de programación que adoptan varios paradigmas como es el caso de python y javascript, estos son lenguajes multiparadigmas.
 > 
+
+## UML
+Lenguaje Unificado de Modelado (los objetos son representados por rectamgulos orizontales).
+No olvidemos que segun el contexto (donde usare el onjeto) seran sus atributos.
+![alt text](image-2.png)
+los metodos solo hacen una sola cosa

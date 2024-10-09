@@ -12,7 +12,6 @@
 # def dividir(self);
 #    pass
 
-
 # nombre de mi clase (el modelo)
 class Mascota:
 # atributos de mi clase (esta pre creado)
